@@ -134,6 +134,10 @@ class HookExecutor:
 APPLICATION ENTRY POINT
 """
 if __name__ == "__main__":
-    with HookExecutor(EXECUTABLE_DIRECTORY, EXECUTABLE_LOGFILE) as x:
-        x.get_executables()
-        x.run_executables()
+    if len(sys.argv) == 3:
+        with HookExecutor(sys.argv[1], sys.argv[2]) as x:
+            x.get_executables()
+            x.run_executables()
+    else:
+        print "Not enough arguments."
+        print "python-hook-execute.py <directory_name> <logfile_name>"
