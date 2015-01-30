@@ -51,7 +51,8 @@ class HookExecutor:
         if os.path.isdir(hook_directory):
             self.hook_directory = hook_directory
         else:
-            raise PathError("Invalid Path")
+            print "Path doesn't exist. Exiting"
+            exit();
 
         self.hooks = list()
 
