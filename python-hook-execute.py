@@ -23,20 +23,11 @@ Dependencies:
  subprocess
  time
 """
-
-"""
-Set EXECUTABLE_DIRECTORY to the path where the hooks are located
-Set EXECUTABLE_LOGFILE to the path where the hook logfile is located (or /dev/null if no logs are to be kept)
-"""
-
 import os
 import sys
 import stat
 import subprocess
 import time
-
-EXECUTABLE_DIRECTORY = '~/py_hooks'
-EXECUTABLE_LOGFILE   = '~/py_hooks_log'
 
 class HookExecutor:
     """
