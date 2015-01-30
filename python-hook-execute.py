@@ -133,7 +133,6 @@ class HookExecutor:
 """
 APPLICATION ENTRY POINT
 """
-
 if __name__ == "__main__":
     with HookExecutor(EXECUTABLE_DIRECTORY, EXECUTABLE_LOGFILE) as x:
         x.get_executables()
