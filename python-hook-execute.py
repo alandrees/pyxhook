@@ -93,8 +93,6 @@ class HookExecutor:
 
         with open(self.log_filename, "a") as outfile:
             outfile.write(self.log_buffer)
-
-
         pass
 
     def get_executables(self):
