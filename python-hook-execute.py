@@ -51,7 +51,7 @@ class HookExecutor:
         if os.path.isdir(hook_directory):
             self.hook_directory = hook_directory
         else:
-            print "Path doesn't exist. Exiting"
+            print("Path doesn't exist. Exiting")
             exit();
 
         self.hooks = list()
@@ -139,5 +139,5 @@ if __name__ == "__main__":
             x.get_executables()
             x.run_executables()
     else:
-        print "Not enough arguments."
-        print "python-hook-execute.py <directory_name> <logfile_name>"
+        print("Not enough arguments.")
+        print("python-hook-execute.py <directory_name> <logfile_name>")
