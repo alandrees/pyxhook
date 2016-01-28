@@ -1,5 +1,5 @@
 """
-Copyright (C) 2015 Alan Drees
+Copyright (C) 2015-2016 Alan Drees
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
