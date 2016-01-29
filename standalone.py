@@ -33,4 +33,4 @@ if __name__ == "__main__":
             x.run_executables()
     else:
         print("Not enough arguments.")
-        print("python-hook-execute.py <directory_name> <logfile_name>")
+        print("standalone.py <directory_name> <logfile_name>")
