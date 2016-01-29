@@ -28,7 +28,7 @@ import hookexecute
 
 if __name__ == "__main__":
     if len(sys.argv) == 3:
-        with HookExecutor(sys.argv[1], sys.argv[2]) as x:
+        with hookexecute.HookExecutor(sys.argv[1], sys.argv[2]) as x:
             x.get_executables()
             x.run_executables()
     else:
